@@ -1,0 +1,47 @@
+
+------------------
+Data:2022-05-04 09:38:42
+Mensagem:Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+StackTrace:   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em Repositories.Database.Entity.Livro.update(Livro livro) na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Repositories\Database\Entity\Livro.cs:linha 45
+   em api_bib.Controllers.LivrosController.Put(Int32 id, Livro livro) na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\web-api\api-bib\Controllers\LivrosController.cs:linha 84
+InnerException:System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<>c.<Update>b__21_0(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__153_0()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass148_0.<SaveChangesInternal>b__0()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+TargetSite:Int32 SaveChanges()
+------------------
+Data:2022-05-04 09:39:51
+Mensagem:Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+StackTrace:   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em Repositories.Database.Entity.Livro.delete(Int32 id) na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Repositories\Database\Entity\Livro.cs:linha 58
+   em api_bib.Controllers.LivrosController.Delete(Int32 id) na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\web-api\api-bib\Controllers\LivrosController.cs:linha 109
+InnerException:System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<>c.<Update>b__21_0(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__153_0()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass148_0.<SaveChangesInternal>b__0()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+TargetSite:Int32 SaveChanges()

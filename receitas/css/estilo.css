@@ -1,0 +1,81 @@
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: orangered;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: orangered;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dcdcdc;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+ul#ul1,
+ol#ol1 {
+    margin: 20px 0 0 30px;
+    list-style: disc;
+}
+
+ol#ol1 {
+    list-style: upper-roman;
+}
+
+ul#ul1 li,
+ol#ol1 li {
+    margin: 0 0 20px 0;
+}
+
+div#imagem {
+    text-align: center;
+}
+
+form{
+    text-align: left;
+    margin: 0 0 0 20px;
+
+}
+
+div#nome{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+fieldset{
+    display: block;
+    margin-left: 2px;
+    margin-right: 1500px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}

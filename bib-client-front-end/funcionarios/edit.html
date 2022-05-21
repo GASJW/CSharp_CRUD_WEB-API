@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edição de funcionário</title>
+    <link rel="stylesheet" href="../css/w3.css" />
+    <script src="../js/script.js"></script>
+    <script src="js/edit.js"></script>
+  </head>
+  <body>
+    <nav class="w3-bar w3-black">
+      <ul>
+        <li class="w3-bar-item w3-button"><a href="../index.html">Home</a></li>
+        <li class="w3-bar-item w3-button"><a href="index.html">Livros</a></li>
+        <li class="w3-bar-item w3-button">
+          <a href="../funcionarios/index.html">Funcionários</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="w3-blue">Edição de funcionario</h1>
+    <form class="w3-container">
+      <input type="hidden" id="hddId" />
+      <div>
+        <label>Nome:</label
+        ><input type="text" id="txtNome" class="w3-input w3-border w3-round" />
+      </div>
+      <div>
+        <label>Sobrenome:</label
+        ><input
+          type="text"
+          id="txtSobrenome"
+          class="w3-input w3-border w3-round"
+        />
+      </div>
+      <div>
+        <label>Cargo:</label
+        ><input type="text" id="txtCargo" class="w3-input w3-border w3-round" />
+      </div>
+      <div>
+        <label>Idade:</label
+        ><input type="text" id="txtIdade" class="w3-input w3-border w3-round" />
+      </div>
+      <div class="w3-padding">
+        <button type="button" id="btnAlterar" class="w3-btn w3-blue">
+          Alterar
+        </button>
+        <button type="button" id="btnVoltar" class="w3-btn w3-blue">
+          Voltar
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

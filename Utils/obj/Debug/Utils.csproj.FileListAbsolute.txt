@@ -1,0 +1,16 @@
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Utils\bin\Debug\Utils.dll
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Utils\bin\Debug\Utils.pdb
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Utils\obj\Debug\Utils.csprojAssemblyReference.cache
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Utils\obj\Debug\Utils.dll
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Utils\obj\Debug\Utils.pdb
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\Utils\bin\Debug\Utils.dll
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\Utils\bin\Debug\Utils.pdb
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\Utils\obj\Debug\Utils.csprojAssemblyReference.cache
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\Utils\obj\Debug\Utils.dll
+D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\Utils\obj\Debug\Utils.pdb
+D:\JNMoura\web-api\Utils\bin\Debug\Utils.dll
+D:\JNMoura\web-api\Utils\bin\Debug\Utils.pdb
+D:\JNMoura\web-api\Utils\obj\Debug\Utils.csproj.AssemblyReference.cache
+D:\JNMoura\web-api\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+D:\JNMoura\web-api\Utils\obj\Debug\Utils.dll
+D:\JNMoura\web-api\Utils\obj\Debug\Utils.pdb

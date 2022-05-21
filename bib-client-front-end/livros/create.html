@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo livro</title>
+    <link rel="stylesheet" href="../css/w3.css" />
+    <script src="../js/script.js"></script>
+    <script src="js/create.js"></script>
+  </head>
+  <body>
+    <nav class="w3-bar w3-black">
+      <ul>
+        <li class="w3-bar-item w3-button"><a href="../index.html">Home</a></li>
+        <li class="w3-bar-item w3-button"><a href="index.html">Livros</a></li>
+        <li class="w3-bar-item w3-button">
+          <a href="../funcionarios/index.html">Funcionários</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="w3-blue">Cadastro de livros</h1>
+    <form class="w3-container">
+      <div>
+        <label>Título</label
+        ><input
+          type="text"
+          id="txtTitulo"
+          class="w3-input w3-border w3-round"
+        />
+      </div>
+      <div>
+        <label>Autor</label
+        ><input type="text" id="txtAutor" class="w3-input w3-border w3-round" />
+      </div>
+      <div>
+        <label>Páginas</label
+        ><input
+          type="text"
+          id="txtNumerosPaginas"
+          class="w3-input w3-border w3-round"
+        />
+      </div>
+      <div class="w3-padding">
+        <button id="btnSalvar" type="button" class="w3-btn w3-blue">
+          Salvar
+        </button>
+        <button id="btnVoltar" type="button" class="w3-btn w3-blue">
+          Voltar
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+
+------------------
+Data:2022-05-03 10:27:37
+Mensagem:No Entity Framework provider found for the ADO.NET provider with invariant name 'System.Data.SqlClient'. Make sure the provider is registered in the 'entityFramework' section of the application config file. See http://go.microsoft.com/fwlink/?LinkId=260882 for more information.
+StackTrace:   em System.Data.Entity.Infrastructure.DependencyResolution.DefaultProviderServicesResolver.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.CachingDependencyResolver.<>c__DisplayClass4_0.<GetService>b__0(Tuple`2 k)
+   em System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   em System.Data.Entity.Infrastructure.DependencyResolution.CachingDependencyResolver.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.ResolverChain.<>c__DisplayClass5_0.<GetService>b__0(IDbDependencyResolver r)
+   em System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   em System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   em System.Data.Entity.Infrastructure.DependencyResolution.ResolverChain.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.RootDependencyResolver.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.ResolverChain.<>c__DisplayClass5_0.<GetService>b__0(IDbDependencyResolver r)
+   em System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   em System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   em System.Data.Entity.Infrastructure.DependencyResolution.ResolverChain.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.CompositeResolver`2.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.DbDependencyResolverExtensions.GetService[T](IDbDependencyResolver resolver, Object key)
+   em System.Data.Entity.Utilities.DbProviderFactoryExtensions.GetProviderServices(DbProviderFactory factory)
+   em System.Data.Entity.Infrastructure.DefaultManifestTokenResolver.<>c__DisplayClass1_0.<ResolveManifestToken>b__0(Tuple`3 k)
+   em System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   em System.Data.Entity.Infrastructure.DefaultManifestTokenResolver.ResolveManifestToken(DbConnection connection)
+   em System.Data.Entity.Utilities.DbConnectionExtensions.GetProviderInfo(DbConnection connection, DbProviderManifest& providerManifest)
+   em System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   em System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   em System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   em System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   em System.Data.Entity.Internal.InternalContext.Initialize()
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   em System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em Repositories.Entity.Livro.get() na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Repositories\Entity\Livro.cs:linha 17
+   em api_bib.Controllers.LivrosController.Get() na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\web-api\api-bib\Controllers\LivrosController.cs:linha 18
+InnerException:
+TargetSite:System.Object GetService(System.Type, System.Object)
+------------------
+Data:2022-05-03 10:32:46
+Mensagem:The Entity Framework provider type 'System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer' registered in the application config file for the ADO.NET provider with invariant name 'System.Data.SqlClient' could not be loaded. Make sure that the assembly-qualified name is used and that the assembly is available to the running application. See http://go.microsoft.com/fwlink/?LinkId=260882 for more information.
+StackTrace:   em System.Data.Entity.Infrastructure.DependencyResolution.ProviderServicesFactory.GetInstance(String providerTypeName, String providerInvariantName)
+   em System.Data.Entity.Internal.AppConfig.<.ctor>b__12_2(ProviderElement e)
+   em System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em System.Data.Entity.Internal.AppConfig.<.ctor>b__12_0()
+   em System.Lazy`1.CreateValue()
+   em System.Lazy`1.LazyInitValue()
+   em System.Lazy`1.get_Value()
+   em System.Data.Entity.Internal.AppConfig.get_DbProviderServices()
+   em System.Data.Entity.Infrastructure.DependencyResolution.AppConfigDependencyResolver.RegisterDbProviderServices()
+   em System.Data.Entity.Infrastructure.DependencyResolution.AppConfigDependencyResolver.GetServiceFactory(Type type, String name)
+   em System.Data.Entity.Infrastructure.DependencyResolution.AppConfigDependencyResolver.<>c__DisplayClass9_0.<GetService>b__0(Tuple`2 t)
+   em System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   em System.Data.Entity.Infrastructure.DependencyResolution.AppConfigDependencyResolver.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.ResolverChain.<>c__DisplayClass5_0.<GetService>b__0(IDbDependencyResolver r)
+   em System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   em System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   em System.Data.Entity.Infrastructure.DependencyResolution.ResolverChain.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.CompositeResolver`2.GetService(Type type, Object key)
+   em System.Data.Entity.Infrastructure.DependencyResolution.DbDependencyResolverExtensions.GetService[T](IDbDependencyResolver resolver)
+   em System.Data.Entity.DbContext.InitializeLazyInternalContext(IInternalConnection internalConnection, DbCompiledModel model)
+   em System.Data.Entity.DbContext..ctor(String nameOrConnectionString)
+   em Repositories.Entity.Context..ctor(String connectionString) na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Repositories\Entity\Context.cs:linha 16
+   em Repositories.Entity.Livro.get() na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Repositories\Entity\Livro.cs:linha 15
+   em api_bib.Controllers.LivrosController.Get() na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\web-api\api-bib\Controllers\LivrosController.cs:linha 18
+InnerException:
+TargetSite:System.Data.Entity.Core.Common.DbProviderServices GetInstance(System.String, System.String)
+------------------
+Data:2022-05-03 10:38:38
+Mensagem:An error occurred while executing the command definition. See the inner exception for details.
+StackTrace:   em System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   em System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__1()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   em System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em Repositories.Entity.Livro.get() na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\Repositories\Entity\Livro.cs:linha 17
+   em api_bib.Controllers.LivrosController.Get() na D:\sama\cursos\moura\.net-angular-2022-turma02\projetos\web-api\web-api\api-bib\Controllers\LivrosController.cs:linha 18
+InnerException:System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'NumeroDePaginas'.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c.<Reader>b__6_0(DbCommand t, DbCommandInterceptionContext`1 c)
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+ClientConnectionId:1b8379f1-5174-431f-bc53-6ad2a414a8f7
+Error Number:207,State:1,Class:16
+TargetSite:System.Data.Common.DbDataReader ExecuteStoreCommands(System.Data.Entity.Core.EntityClient.EntityCommand, System.Data.CommandBehavior)

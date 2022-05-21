@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="JavaScript/script.js"></script>
+</head>
+<body>
+    <h4>Informe os dados da receita</h4>
+    <form>
+        <fieldset>
+            <div id="Nome"><label for="txtNome">Nome: </label><input id="txtNome" type="text"></input></div>
+            <div id="Ingredientes"><label for="txtIngredientes"></label>Ingredientes: </label></div><textarea id="txtIngredientes" type="text" cols="30" rows="10"></textarea>
+            <div id="Mododepreparo"><label for="txtMododepreparo">Modo de preparo: </label></div><textarea id="txtMododepreparo" type="text" cols="30" rows="10"></textarea>
+            <div id="select">
+                <label>Tipo:</label>
+                <select id="tipo">
+                    <option value="" selected>Selecione</option>
+                    <option value="">Bolo</option>
+                    <option value="">Frango</option>
+                    <option value="">Torta</option>
+                </select>
+                <button type="submit" id="Enviar" onclick="validar()">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
