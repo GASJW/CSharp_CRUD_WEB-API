@@ -1,0 +1,50 @@
+.shadowbutton {
+  background-color: #2196f3;
+  box-shadow: #045faa 2px 2px 0px;
+  border-radius: 8px;
+  border-color: #2196f3;
+  transition: transform 200ms, box-shadow 200ms;
+}
+
+button:active {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: #045faa 0px 0px 0px;
+}
+
+/*
+<label class="fancycheckboxlabel">
+    <input type="checkbox" class="fancycheckboxinput" />
+    <span class="fancycheckbox"></span>
+</label>
+*/
+
+.fancycheckboxlabel {
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.fancycheckboxinput {
+  position: absolute;
+  transform: scale(0);
+}
+
+input:checked ~ .fancycheckbox {
+  transform: rotate(45deg);
+  width: 10px;
+  margin-left: 8px;
+  border-color: #24c78e;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0;
+}
+
+.fancycheckbox {
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 3px solid #434343;
+  border-radius: 6px;
+  transition: all 0.375s;
+}

@@ -14,3 +14,9 @@ D:\JNMoura\web-api\Models\obj\Debug\Models.csproj.AssemblyReference.cache
 D:\JNMoura\web-api\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 D:\JNMoura\web-api\Models\obj\Debug\Models.dll
 D:\JNMoura\web-api\Models\obj\Debug\Models.pdb
+D:\Gui\CSharp_CRUD_WEB-API\Models\bin\Debug\Models.dll
+D:\Gui\CSharp_CRUD_WEB-API\Models\bin\Debug\Models.pdb
+D:\Gui\CSharp_CRUD_WEB-API\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+D:\Gui\CSharp_CRUD_WEB-API\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Gui\CSharp_CRUD_WEB-API\Models\obj\Debug\Models.dll
+D:\Gui\CSharp_CRUD_WEB-API\Models\obj\Debug\Models.pdb
